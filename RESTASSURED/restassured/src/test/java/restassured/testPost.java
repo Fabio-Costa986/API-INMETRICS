@@ -32,7 +32,7 @@ public class testPost {
 		System.out.println("Cadastro " + response.asString());
 		
 		int statusCod = response.getStatusCode();
-		assertEquals(202, statusCod);
+		assertEquals(200, statusCod);
 		
 		
 	}

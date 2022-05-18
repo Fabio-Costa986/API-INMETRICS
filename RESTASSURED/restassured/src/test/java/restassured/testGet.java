@@ -14,7 +14,7 @@ public class testGet {
 	
 	Response response = RestAssured.get("https://api.trello.com/1/actions/592f11060f95a3d3d46a987a/list");
 	
-	
+	@Test
 	public void statusCode() {
 		
 		int statusCode = response.getStatusCode();
@@ -23,7 +23,7 @@ public class testGet {
 		
 	}
 	
-	
+	@Test
 	public void bodyList() {
 		
 		String bodyResponse = response.asString();
